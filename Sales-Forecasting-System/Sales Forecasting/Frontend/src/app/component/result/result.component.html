@@ -1,0 +1,35 @@
+
+<nav>
+  <h1 style="padding: 15px;">Sales Analytics.</h1>
+  <span class="user-email"><h4>{{user?.email}}</h4></span>
+  <span class="user-lasttime">{{user?.metadata?.lastSignInTime}}</span>
+  <button routerLink="/auth" class="btn btn-success" onclick="localStorage.removeItem('token')">Logout</button>
+</nav>
+<div class="card">
+  <div>
+    <ngx-charts-line-chart
+      [view]="view"
+      [scheme]="colorScheme"
+      [results]="chartData"
+      [gradient]="gradient"
+      [xAxis]="showXAxis"
+      [yAxis]="showYAxis"
+      [legend]="showLegend"
+      [showXAxisLabel]="showXAxisLabel"
+      [xAxisLabel]="xAxisLabel"
+      [showYAxisLabel]="showYAxisLabel"
+      [yAxisLabel]="yAxisLabel"
+      (select)="onSelect($event)">
+    </ngx-charts-line-chart>
+    <div class="metrics">
+      <div class="metric-box">
+        <div class="metric-title">RMSE:{{rmse}}</div>
+      </div>
+      <div class="metric-box">
+        <div class="metric-title">MAPE:{{mape}}</div>
+      </div>
+      <div class="metric-box">
+        <div class="metric-title">MAE:{{mae}}</div>
+      </div> 
+  </div>
+</div>

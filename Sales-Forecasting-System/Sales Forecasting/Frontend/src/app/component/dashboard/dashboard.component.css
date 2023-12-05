@@ -1,0 +1,64 @@
+@import url('https://fonts.googleapis.com/css?family=Mukta');
+.dashboard {
+    width: 50%;
+    margin: 50px auto 0; /* Add margin-top of 50px to create a gap between the navbar and card */
+    padding: 20px;
+    background-color: #fff;
+    box-shadow: 0 0 10px rgba(0,0,0,.1);
+    border-radius: 5px;
+   
+  }
+  
+  .dashboard:hover {
+    box-shadow: 0 0 20px rgba(0,0,0,.2);
+    transform: scale(1.01);
+    transition: all 0.3s ease-in-out;
+  }
+  
+  .dashboard h1 {
+    text-align: center;
+    font-size: 28px;
+    margin-bottom: 20px;
+  }
+  
+  .dashboard form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .dashboard .form-group {
+    margin-bottom: 15px;
+    width: 100%;
+  }
+  
+  .dashboard label {
+    display: block;
+    font-size: 16px;
+    margin-bottom: 5px;
+  }
+  
+  .dashboard input[type="file"],
+  .dashboard select,
+  .dashboard input[type="text"] {
+    width: 100%;
+    border: 1px solid #ccc;
+    padding: 10px;
+    font-size: 16px;
+    border-radius: 5px;
+  }
+  
+  .dashboard button[type="submit"] {
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    font-size: 18px;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  .dashboard button[type="submit"]:hover {
+    background-color: #0069d9;
+  }
+  

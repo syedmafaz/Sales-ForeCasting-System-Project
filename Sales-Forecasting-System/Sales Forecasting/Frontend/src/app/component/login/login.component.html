@@ -1,0 +1,49 @@
+<form class="form" autocomplete="off" (ngSubmit)="login()">
+    <div class="control">
+      <h1>Sign In</h1>
+    </div>
+    <div class="control block-cube block-input">
+        <input type="email" placeholder="Email" name="email" [(ngModel)]="email" required>
+      <div class="bg-top">
+        <div class="bg-inner"></div>
+      </div>
+      <div class="bg-right">
+        <div class="bg-inner"></div>
+      </div>
+      <div class="bg">
+        <div class="bg-inner"></div>
+      </div>
+    </div>
+    <div class="control block-cube block-input">
+      <input name="password" type="password" placeholder="Password" [(ngModel)]="password" />
+      <div class="bg-top">
+        <div class="bg-inner"></div>
+      </div>
+      <div class="bg-right">
+        <div class="bg-inner"></div>
+      </div>
+      <div class="bg">
+        <div class="bg-inner"></div>
+      </div>
+    </div>
+    <button class="btn block-cube block-cube-hover" type="submit">
+      <div class="bg-top">
+        <div class="bg-inner"></div>
+      </div>
+      <div class="bg-right">
+        <div class="bg-inner"></div>
+      </div>
+      <div class="bg">
+        <div class="bg-inner"></div>
+      </div>
+      <div class="text">Log In</div>
+    </button>
+    <br>
+    <div class="control">
+        <h5><a href="/forgot-password" style="text-decoration: none;"> Forgot Password ? </a>  <a (click)="signInWithGoogle()" style="text-decoration: none; color:aquamarine; cursor: pointer;">[Sign In with Google] </a></h5>
+
+      </div>
+     
+  </form>
+ 
+ 

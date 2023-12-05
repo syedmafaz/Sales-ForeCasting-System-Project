@@ -1,0 +1,29 @@
+nav{
+  background-color:  rgba(236, 48, 20, 0.9);
+  width: 100%;height: 25vh;
+  position: relative;
+  color: #271a1a;
+}
+.card{
+  box-shadow: 0 0 15px 0 rgb(0, 0, 0);
+  height: 75vh;
+  width: 70%;
+  background-color: #fff;
+  margin: -5rem auto;
+}
+button{
+  position: absolute;
+  top: 70%;
+  right: 2%;
+}
+.user-lasttime{
+  position: absolute;
+  right: 15%;
+  top: 30%;
+}
+.user-email{
+  position: absolute;
+  right: 15%;
+  top: 15%;
+}
+

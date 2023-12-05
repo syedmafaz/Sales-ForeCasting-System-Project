@@ -1,0 +1,34 @@
+<nav>
+  <h1 style="padding: 15px;">Sales Analytics.</h1>
+  <span class="user-email"><h4>{{user?.email}}</h4></span>
+  <span class="user-lasttime">{{user?.metadata?.lastSignInTime}}</span>
+  <button routerLink="/auth" class="btn btn-success" onclick="localStorage.removeItem('token')">Logout</button>
+</nav>
+<div class="card">
+  <app-dashboard></app-dashboard>
+</div>
+
+
+
+<!-- <nav>
+  <h1>Sales Analytics.</h1>
+  <span class="user-email">{{user?.email}}</span>
+  <span class="user-lasttime">{{user?.metadata?.lastSignInTime}}</span>
+  <button routerLink="/auth" class="btn btn-danger" onclick="localStorage.removeItem('token')">Logout</button>
+</nav>
+<div class="card">
+  <ng-container *ngIf="isLoading; else result">
+    <div class="card-body text-center">
+      <h3>Loading...</h3>
+    </div>
+  </ng-container>
+  <ng-template #result>
+    <ng-container *ngIf="chartData">
+      <app-result ></app-result>
+    </ng-container>
+    <ng-container *ngIf="!chartData">
+      <app-dashboard></app-dashboard>
+    </ng-container>
+  </ng-template>
+</div> -->
+

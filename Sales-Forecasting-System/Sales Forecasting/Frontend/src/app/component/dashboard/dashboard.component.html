@@ -1,0 +1,24 @@
+
+<div class="dashboard">
+    <h1>Dashboard</h1>
+    <form (ngSubmit)="onSubmit()">
+      <div class="form-group">
+        <label for="csvFile">Upload CSV file:</label>
+        <input type="file" id="csvFile" name="csvFile" (change)="onFileSelected($event)">
+      </div>
+      <div class="form-group">
+        <label for="periodicity">Periodicity:</label>
+        <select id="periodicity" name="periodicity" [(ngModel)]="periodicity">
+          <option value="daily">Daily</option>
+          <option value="weekly">Weekly</option>
+          <option value="monthly">Monthly</option>
+          <option value="yearly">Yearly</option>
+        </select>
+      </div>
+      <div class="form-group">
+        <label for="timePeriod">Time period:</label>
+        <input type="text" id="timePeriod" name="timePeriod" [(ngModel)]="timePeriod">
+      </div>
+      <button type="submit">Submit</button>
+    </form>
+  </div>
